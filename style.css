@@ -1,0 +1,439 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f0eb;
+    color: #1e1c1a;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    height: 90px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f4f0eb;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.logo span {
+    font-weight: normal;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1e1c1a;
+    font-size: 11px;
+    letter-spacing: 2px;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.5;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 700px;
+    padding: 100px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ddd0c5;
+}
+
+.hero-content {
+    max-width: 760px;
+}
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 0.98;
+    font-weight: normal;
+    margin-bottom: 35px;
+}
+
+.hero-description {
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.button {
+    display: inline-block;
+    background: #1e1c1a;
+    color: white;
+    padding: 17px 32px;
+    text-decoration: none;
+    font-size: 10px;
+    letter-spacing: 3px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    opacity: 0.85;
+}
+
+.hero-side {
+    text-align: right;
+    font-family: Georgia, serif;
+}
+
+.hero-side p {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero-side span {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    min-height: 600px;
+    padding: 120px 10%;
+    display: flex;
+    gap: 100px;
+    align-items: flex-start;
+    background: #f4f0eb;
+}
+
+.section-number {
+    font-family: Georgia, serif;
+    font-size: 28px;
+}
+
+.about-content {
+    max-width: 750px;
+}
+
+.about h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(45px, 6vw, 75px);
+    line-height: 1.05;
+    font-weight: normal;
+    margin-bottom: 35px;
+}
+
+.about-content > p:last-child {
+    max-width: 600px;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    padding: 120px 8%;
+    background: white;
+}
+
+.services h2 {
+    font-family: Georgia, serif;
+    font-size: 65px;
+    font-weight: normal;
+    margin-bottom: 70px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.service-card {
+    padding: 50px 40px;
+    border-top: 1px solid #cfc7c0;
+}
+
+.service-card:nth-child(odd) {
+    border-right: 1px solid #cfc7c0;
+}
+
+.service-card span {
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin: 25px 0 15px;
+}
+
+.service-card p {
+    max-width: 400px;
+    line-height: 1.7;
+    color: #666;
+}
+
+
+/* =========================
+   PORTFOLIO
+========================= */
+
+.portfolio {
+    padding: 120px 8%;
+}
+
+.portfolio-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 60px;
+}
+
+.portfolio h2 {
+    font-family: Georgia, serif;
+    font-size: 65px;
+    line-height: 1.05;
+    font-weight: normal;
+}
+
+.portfolio-description {
+    max-width: 300px;
+    line-height: 1.7;
+    color: #666;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+}
+
+.gallery-item.large {
+    grid-row: span 2;
+}
+
+.placeholder {
+    height: 330px;
+    background: #cdbdb1;
+    display: flex;
+    align-items: end;
+    padding: 30px;
+    font-family: Georgia, serif;
+    font-size: 28px;
+}
+
+.gallery-item.large .placeholder {
+    height: 680px;
+}
+
+.placeholder span {
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   STATEMENT
+========================= */
+
+.statement {
+    padding: 150px 10%;
+    background: #1e1c1a;
+    color: white;
+}
+
+.statement h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 1;
+    font-weight: normal;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.apply {
+    text-align: center;
+    padding: 140px 20px;
+    background: #ddd0c5;
+}
+
+.apply h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(50px, 7vw, 85px);
+    line-height: 1;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.apply > p:not(.eyebrow) {
+    max-width: 450px;
+    margin: 0 auto 35px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 60px 8%;
+    background: #1e1c1a;
+    color: white;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #555;
+}
+
+.footer-top p {
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    font-size: 9px;
+    letter-spacing: 1px;
+    opacity: 0.6;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        height: 70px;
+        padding: 0 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        min-height: 600px;
+        padding: 70px 25px;
+    }
+
+    .hero-side {
+        display: none;
+    }
+
+    .about {
+        padding: 90px 25px;
+        display: block;
+    }
+
+    .section-number {
+        margin-bottom: 40px;
+    }
+
+    .services,
+    .portfolio {
+        padding: 90px 25px;
+    }
+
+    .services h2,
+    .portfolio h2 {
+        font-size: 48px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card:nth-child(odd) {
+        border-right: none;
+    }
+
+    .portfolio-heading {
+        display: block;
+    }
+
+    .portfolio-description {
+        margin-top: 30px;
+    }
+
+    .gallery {
+        display: block;
+    }
+
+    .gallery-item {
+        margin-bottom: 20px;
+    }
+
+    .gallery-item.large .placeholder,
+    .placeholder {
+        height: 350px;
+    }
+
+    .statement {
+        padding: 100px 25px;
+    }
+
+    .footer-top,
+    .footer-bottom {
+        display: block;
+    }
+
+    .footer-top p {
+        margin-top: 25px;
+    }
+
+    .footer-bottom p {
+        margin-bottom: 10px;
+    }
+
+}
